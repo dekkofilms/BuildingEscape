@@ -36,5 +36,11 @@ public:
 	void SetupInputComponent();
 
 	// Return hit for first physics body in reach
-	FHitResult GetFirstPhysicsBodyInReach () const;
+	FHitResult GetFirstPhysicsBodyInReach() const;
+
+	// Get the player location
+	FVector GetReachLineStart() const;
+
+	// Get the reach of the player
+	FVector GetReachLineEnd() const;
 };
